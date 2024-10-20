@@ -93,7 +93,7 @@ class _DockState<T> extends State<Dock<T>> {
           final index = entry.key;
           final icon = entry.value;
 
-          /*recieve the DRAGGED_ELEMENT index*/
+          /*widget to recieve the DRAGGED_ELEMENT index*/
           return DragTarget<int>(
             onWillAccept: (draggedIndex) => draggedIndex != index,
             onAccept: (draggedIndex) {
@@ -124,7 +124,7 @@ class _DockState<T> extends State<Dock<T>> {
     );
   }
 
-  /*method user to ANIMATE and FADE the DRAGGING INDEX*/
+  /*method returns widget user to ANIMATE and FADE the DRAGGING INDEX*/
   Widget _buildIcon(T icon, double size, {bool isDragging = false}) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
