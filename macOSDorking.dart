@@ -124,7 +124,7 @@ class _DockState<T> extends State<Dock<T>> {
     );
   }
 
-  /*method returns widget user to ANIMATE and FADE the DRAGGING INDEX*/
+  /*method returns widget to the user to ANIMATE and FADE the DRAGGING INDEX*/
   Widget _buildIcon(T icon, double size, {bool isDragging = false}) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
